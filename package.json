@@ -1,0 +1,25 @@
+{
+  "name": "nfc",
+  "version": "0.1.0",
+  "description": "Node NFC functionallity through libnfc",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akinsella/node-nfc.git"
+  },
+  "keywords": [
+    "nfc"
+  ],
+  "dependencies": {
+    "mocha": "^1.21.4",
+    "ndef": "0.0.4",
+    "should": "^4.0.4"
+  },
+  "author": "Alexis Kinsella <alexis.kinsella@gmail.com>",
+  "license": "MIT",
+  "gypfile": true
+}
