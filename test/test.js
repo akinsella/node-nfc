@@ -8,11 +8,12 @@ describe('nfc', function(){
 	describe('Ping', function(){
 		it('Should ping', function(){
 			var nfc = new Nfc();
-			nfc.on('ping', function(err, data) {
-				console.log('Ping data: ' + data);
+			nfc.on('ping', function(data) {
+				console.log('Ping data: ' + util.inspect(data));
+				data.should.equal('Hello World!');
 			});
 
-			nfc.ping();
+			nfc.ping('Hello World!');
 		});
 	});
 
